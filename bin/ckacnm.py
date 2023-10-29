@@ -16,7 +16,7 @@ def keepAliveToServerThreaded(SIP, SPORT):
 
 			try:
 				karoot.connect((SIP,SPORT))
-				karoot.send("HelloWorld".encode("utf-8"))
+				karoot.send(b"Helo")
 			except socket.error as error:
 				print(f"{error}")
 
@@ -32,9 +32,8 @@ def waitForConnections():
 			cnroot.listen(10)
 
 		except socket.error as error:
-			exit(1)
+			print(error)
 
-		message = ""
 		while True:
 
 			clientSock, ConnData = cnroot.accept()
