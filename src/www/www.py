@@ -7,9 +7,6 @@ www = Flask(__name__)
 logOutput = logging.getLogger('werkzeug')
 logOutput.disabled = True
 
-WHOST = '127.0.0.1'
-WPORT = 8080
-
 @www.route('/', methods=['GET','POST'])
 def main():
 
@@ -27,6 +24,6 @@ def main():
 	else:
 		return "False"
 
-def serveWebPage(): www.run(host=WHOST, port=WPORT)
-def serverWebPageThreaded(): threading.Thread(target=serveWebPage).start()
+def serveWebPage(WHOST, WPORT): www.run(host=WHOST, port=WPORT)
+def serverWebPageThreaded(WHOST, WPORT): threading.Thread(target=serveWebPage, args=(WHOST,WPORT)).start()
 

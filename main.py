@@ -8,17 +8,17 @@ from www import serverWebPageThreaded
 from kam import listenForKeepAliveThreaded
 from vscnm import hostDialogVisualization
 
+HOST_IP = '127.0.0.1'
+
+WEB_PORT = 8080
 KEEP_ALIVE_PORT = 10010
-KEEP_ALIVE_IP	= '127.0.0.1'
 CLIENT_CONNECTION_PORT = 10011
+
 DIALOG_BIN_PATH = "/usr/bin/dialog"
 DEVICES_CONNECTED = [("0","Update Page")]
 
-listenForKeepAliveThreaded(KEEP_ALIVE_PORT, KEEP_ALIVE_IP, DEVICES_CONNECTED, False)
-serverWebPageThreaded()
+listenForKeepAliveThreaded(KEEP_ALIVE_PORT, HOST_IP, DEVICES_CONNECTED, False)
+serverWebPageThreaded(HOST_IP, WEB_PORT)
 
 while True:
     hostDialogVisualization(DEVICES_CONNECTED, DIALOG_BIN_PATH, CLIENT_CONNECTION_PORT)
-
-# MAKE HERE THE START OF THE PROGRAM
-
