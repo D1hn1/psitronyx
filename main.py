@@ -8,7 +8,7 @@ from www import serverWebPageThreaded
 from kam import listenForKeepAliveThreaded
 from vscnm import hostDialogVisualization
 
-HOST_IP = '127.0.0.1'
+HOST_IP = '0.0.0.0'
 
 WEB_PORT = 8080
 KEEP_ALIVE_PORT = 10010
