@@ -22,5 +22,4 @@ $ python3 main.py
 ```
 - Modify the IP´s according your setup.
 - Press the first row to update the page.
-- Compile the file ./bin/ckacnm.py for Linux and Windows.
-- Move the compiled program to the correspondent folder.
+- The file ./bin/ckacnm.py is the client´s file.
