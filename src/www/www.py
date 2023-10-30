@@ -11,7 +11,7 @@ logOutput.disabled = True
 def main():
 
 	downloadFilePath = os.path.join(www.root_path, "../../bin/")
-	return send_from_directory(downloadFilePath, "ckacnm.py")
+	return send_from_directory(downloadFilePath, "ckacnm.pyw")
 
 def serveWebPage(WHOST, WPORT): www.run(host=WHOST, port=WPORT)
 def serverWebPageThreaded(WHOST, WPORT): threading.Thread(target=serveWebPage, args=(WHOST,WPORT)).start()
