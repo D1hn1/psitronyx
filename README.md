@@ -1,5 +1,7 @@
 # PSITRONYX
 
+![](./image.png)
+
 ### TODO: Compile the python program in ./bin for Windows and Linux
 ### TODO: Terminate the web page ./src/www
 
