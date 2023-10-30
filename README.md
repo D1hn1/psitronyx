@@ -20,6 +20,7 @@ $ pip3 install pyInstaller
 ```cmd
 $ python3 main.py
 ```
-- Press the first row to update the page
-- Compile the file ./bin/ckacnm.py for Linux and Windows
-- Move the compiled program to the correspondent folder
+- Modify the IP´s according your setup.
+- Press the first row to update the page.
+- Compile the file ./bin/ckacnm.py for Linux and Windows.
+- Move the compiled program to the correspondent folder.
