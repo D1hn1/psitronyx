@@ -28,7 +28,7 @@ import time
 import socket
 import threading
 
-CLIENT_IP	= '0.0.0.0' 		#
+CLIENT_IP	= '0.0.0.0'			#
 CLIENT_PORT = 10011				#
 
 SERVER_KA_IP 	= '127.0.0.1'	#
