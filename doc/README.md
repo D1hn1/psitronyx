@@ -1,5 +1,7 @@
 # PSITRONYX DOCUMENTATION
 
+![](./image.png)
+
 ## 1. Downloading and Dependences
 ```shell
 $ git clone https://github.com/d1hn1/psitronyx
