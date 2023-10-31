@@ -61,3 +61,6 @@ DEVICES_CONNECTED = [("0","Update Page")]
 ![](./image2.png)
 > Once you have installed correctly the pyw file into a computer it will appear in PSITRONYX pressing in Update Page.
 > Then you just have to move and enter into it. It will appear a shell which you can input commands in.
+
+## 5. Final
+> If you close PSITRONYX and open it again the connections will still be avalible, just wait some time and press the update button.
