@@ -34,4 +34,9 @@ CLIENT_PORT = 10011 #
 SERVER_KA_IP 	= '127.0.0.1' #
 SERVER_KA_PORT	= 10010 #
 ```
-> Here is a portion of the file, you will have to change (or not) the variables marked with # according to your configuration
+> Here is a portion of the file, you will have to change (or not) the variables marked with # according to your configuration.
+
+## 4. Selecting which to connect
+![](./image2.png)
+> Once you have installed correctly the pyw file into a computer it will appear in PSITRONYX pressing in Update Page.
+> Then you just have to move and enter into it. It will appear a shell which you can input commands in.
