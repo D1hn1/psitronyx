@@ -12,7 +12,6 @@ PSITRONYX is a simple C&C ( Command and Control ) tool made in Python and UI mad
 $ sudo apt install python3-dialog
 $ pip3 install flask
 $ pip3 install logging
-$ pip3 install pyInstaller
 ```
 
 ## Ussage
